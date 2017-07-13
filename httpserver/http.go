@@ -5,5 +5,5 @@ import "../config"
 
 func Test() {
 	port := config.Config.Httpserver.Port
-	fmt.Println("Test", port)
+	fmt.Println("Test Port", port)
 }

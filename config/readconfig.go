@@ -3,12 +3,12 @@ package config
 
 import (
 	"flag"
-	"fmt"
 	"github.com/BurntSushi/toml"
 	"log"
 	"reflect"
 )
 
+// runFlags process the flags of the command line and bind them to a structure representing toml config structure
 func runFlags() {
 	for key, s := range FlagsMap {
 		switch reflect.TypeOf(s.value).String() {
@@ -35,6 +35,4 @@ func Read() {
 	}
 
 	runFlags()
-
-	fmt.Println("Port", Config.Httpserver.Port, Config.Httpserver.Sport)
 }

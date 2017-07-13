@@ -27,6 +27,6 @@ type FlagsStr struct {
 }
 
 var FlagsMap = map[string]FlagsStr{
-	"port":   FlagsStr{help: "The internal port of the Proxy", value: &Config.Httpserver.Port},
-	"config": FlagsStr{help: "The configuration file name", value: &Config.Filename},
+	"port": FlagsStr{help: "The internal port of the Proxy", value: &Config.Httpserver.Port},
+	//	"config": FlagsStr{help: "The configuration file name", value: &Config.Filename}, // Not necessary
 }
