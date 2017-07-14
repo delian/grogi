@@ -7,5 +7,5 @@ import (
 
 func main() {
 	config.Read()
-	httpserver.Test()
+	httpserver.Run()
 }
