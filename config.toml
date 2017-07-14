@@ -1,2 +1,6 @@
 [httpserver]
-port = 8889
+Port = 8889
+Address = 127.0.0.1
+ReadTimeoutSec = 10
+WriteTimeoutSec = 20
+MaxHeaderBytes = 1000000
