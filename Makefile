@@ -9,3 +9,6 @@ build: godeps
 
 clean:
 	rm -rf grogi
+
+run:
+	./grogi
