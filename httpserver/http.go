@@ -21,5 +21,7 @@ func Run() {
 		IdleTimeout:       time.Duration(config.Config.Httpserver.IdleTimeout) * time.Second,
 		MaxHeaderBytes:    config.Config.Httpserver.MaxHeaderBytes,
 	}
+
+	http.Handle("/pesho", http.FileServer(http.Dir("/Users/delian/src/grogi")))
 	log.Fatal(s.ListenAndServe())
 }
